@@ -17,6 +17,7 @@ Note: This will only appear in the speaker notes window.
 - Mine HNT
 - LoRaWan On Helium
 - Use the Network
+- Future & Discussion
 
 ---
 
@@ -85,15 +86,27 @@ if the DC burned doesn't equal the value of 651 HNT, the remaining HNT is redist
 
 ---
 
-## Proof of Coverage
+## Proof of Coverage (PoC)
 
 The Helium Network is a physical wireless network based on the amount of reliable coverage it can create for users deploying connected devices on it.
+
+PoC tries to verify, on an ongoing basis, that Hotspots are honestly representing their location and the wireless network coverage they are creating from that location.
 
 PoC relies on the following characteristics of radio frequency(RF):
 
 - RF has limited physical propagation and, therefore, distance;
 - The strength of a received RF signal is inversely proportional to the square of the distance from the transmitter
 - RF travels at the speed of light with (effectively) no latency;
+
+--
+
+### Proof-of-Coverage Roles
+
+PoC Challenges involve three distinct roles:
+
+- Challenger: The Validator that constructs and issues the PoC Challenge.
+- Beaconer: Sometimes called "Challengee". This Hotspot is the target of the POC challenge and is responsible for transmitting (or "beaconing") challenge packets to potentially be witnessed by geographically proximate Hotspots.
+- Witness: Hotspots that are geographically proximate to the Transmitter and report the existence of the challenge packet after it has been transmitted.
 
 ---
 
@@ -111,6 +124,13 @@ PoC relies on the following characteristics of radio frequency(RF):
 - HNT halving happens every 2 years from the genesis block.
 - no cap on maximum supply -> changed to maximum 223M HNT
 - current supply: 128M HNT
+
+--
+
+### Helium Distributions
+
+<img src="https://i.imgur.com/g2bELKd.png" height="300px"/>
+<img src="https://i.imgur.com/66odQCk.png" height="300px"/>
 
 --
 
@@ -225,8 +245,10 @@ Helium supports decentralized independent operation of LNS. Therefore, it enable
 
 - compatible with LoRaWAN class A devices
   - Class B: [A]
-  - Class C: [A, B]
+  - Class C: [A, B] (supported according to LoRaWAN v1.0.4 specs)
 - enabled the multi-tenancy of LNS’s on the same Public LoRaWAN Network. Public wireless infrastructure is now compatible with privately-run network servers.
+
+> The Helium network supports any LoRaWAN capable device meeting the v1.0.2, v1.0.3, or v1.0.4 specification.
 
 --
 
@@ -258,6 +280,86 @@ An enhancement of Class A, Class B mode offers regularly-scheduled, fixed-time o
 ---
 
 ## Use the Network
+
+--
+
+### Helium Console
+
+Developers can provision and manage devices, monitor data activity, and manage connectivity costs.
+
+Organizations can use Console’s pre-built integrations to quickly send data to their IoT cloud platform of choice.
+
+Pay based on individual data usages at an average cost of $1/sensor/year.
+
+![Console](https://www.helium.com/static/images/consolefeature1.png)
+
+--
+
+### Indoor miner
+
+Required wifi or ethernet
+
+![Device home setup](https://m.media-amazon.com/images/I/61Hss3IehTL.jpg)
+
+--
+
+### Indoor miner outdoor antenna
+
+![Outside antenna](https://m.media-amazon.com/images/I/61upUuEWSLS._AC_SL1500_.jpg)
+
+--
+
+### Outdoor miner
+
+![Nebra outdoor miner](https://notsealed.com/wp-content/uploads/2021/09/nebra-outdoor-antenna.jpg)
+
+--
+
+### Antenna dBi
+
+![Antenna dbi](https://notsealed.com/wp-content/uploads/2021/09/antenna-gain-dbi-3-9.jpg)
+![LoRa antenna dbi](https://cryptomarketpool.com/wp-content/uploads/2022/06/LoRa-Antenna-1.jpg)
+
+### Architecture
+
+![LoRa Network Diagram](https://cryptomarketpool.com/wp-content/uploads/2022/06/loRa-Network-Diagram.jpg)
+
+---
+
+## Discussion
+
+- Helium console is no longer free. 10 Device limit
+- 3rd party console are not transparent in fee structure. 5x expensive?
+- Hosting own console? Too much work to do.
+
+--
+
+### 5G On Helium
+
+> New MOBILE token for 5G network. MOBILE token is backed by HNT
+
+![5G Mobile](https://miro.medium.com/max/828/1*x8bVDJLD7WFANZTMs1-Qkw.png)
+
+![5G](https://www.helium.com/static/images/2/phone2.png)
+
+--
+
+### IOT token
+
+> New IOT token for current hotspots. IOT token is back by HNT.
+
+![IOT token](https://miro.medium.com/max/828/1*SlhivcNt_25CIgedM06ehA.png)
+
+--
+
+### HNT Ecosystem Would Expand on Solana
+
+- Total 943K (63% online) Hotspots deployed across 72K cities and 182 countries.
+- Close to 4,000 Helium 5G radios deployed across 1,000 cities and 48 US states.
+- Almost 100 million data packets transferred over the network in August
+
+<img src="https://docs.helium.com/img/icons/logoblack.svg" height="100px"/>
+<img src="https://solana.com/_next/static/media/dark-horizontal.c3a5eb36.svg" height="100px"/>
 
 ---
 
