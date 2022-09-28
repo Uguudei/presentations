@@ -336,7 +336,7 @@ Required wifi or ethernet
 
 ### 5G On Helium
 
-> New MOBILE token for 5G network. MOBILE token is backed by HNT. Compete with Pollen Mobile(PCN).
+> New MOBILE token(baked by HNT) for 5G network. Compete with [Pollen Mobile(PCN)](https://members.delphidigital.io/reports/pollen-and-helium-the-race-to-bootstrap-a-5g-network/).
 
 ![5G Mobile](https://miro.medium.com/max/828/1*x8bVDJLD7WFANZTMs1-Qkw.png)
 
