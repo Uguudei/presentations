@@ -197,7 +197,7 @@ Blockchain uses HNT/USD price to convert HNT to DC at a rate pegged at $.00001.
 - Helium Hotspots mine $HNT and were originally built by Helium, Inc.
 - But are now built by our growing ecosystem of approved manufacturers.
 
-<!-- [<img src="https://docs.helium.com/img/mine-hnt/minehnticon.png" width="25%"/>](https://docs.helium.com/img/mine-hnt/minehnticon.png) -->
+[<img src="https://docs.helium.com/img/mine-hnt/minehnticon.png" width="25%"/>](https://docs.helium.com/img/mine-hnt/minehnticon.png)
 
 --
 
