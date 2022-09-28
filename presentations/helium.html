@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/6635330" />
+
+		<title>Helium Network</title>
+
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/black.css" id="theme">
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+                <section data-markdown="markdown.md" data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-separator-notes="^Note:" data-background-gradient="linear-gradient(to bottom, #283b95, #833ab4)"></section>
+            </div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/search/search.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+                slideNumber: 'h.v',
+				width: '70%',
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealSearch ]
+			});
+		</script>
+
+	</body>
+</html>
+
+<style>
+:root {
+	--r-main-font-size: 24px;
+	--r-heading-text-transform: capitalize;
+	--r-heading1-size: 3.0em;
+	--r-heading2-size: 2.0em;
+	--r-heading3-size: 1.6em;
+	--r-heading4-size: 1em;
+	/* Make blinking cursor transparent */
+	caret-color: transparent;
+}
+
+.reveal blockquote {
+	width: 75%;
+}
+
+.reveal p {
+	text-align: left;
+}
+.reveal ul,
+.reveal ol {
+	display: block;
+}
+
+table {
+	width: 100%;
+}
+.reveal table thead,
+.reveal table td {
+  border-bottom: 1px solid rgb(255, 255, 255, 0.4);
+}
+</style>
